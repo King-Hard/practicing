@@ -3,10 +3,137 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="icon"
+        <title>Practicing</title>
+        <!--Yung dalawang link tag nato is natutunan natin sa other tags from html. Sa link tag natin magagamit natin to sa paglalagay ng icon sa webpage natin and then pag connect ng css file mula sa html file natin, may 2 attributes tayo: rel and href sa rel dito yung type kunyari lalagyan natin icon yung web page natin lagay lang natin icon don sa loob ng rel, then sa pag connect naman ng css file natin sa loob ng html file natin, lalagay lang natin stylesheet para sa loob ng rel attribute. Sa href naman dito yung link na para sa icon and css file natin.-->
+        <link rel="icon" href="Logo.png"/>
+        <link rel="stylesheet" href="practice.css"/>
     </head>
     <body>
+        <!--Ngayon yung best practice na early stage pa lang matutunan na natin which yung paggamit ng id&class and div. Ngayon combination to bawat element na gagamitin natin is maglalagay tayo ng div and class for varible.
         
+        Heading
+        -->
+  
+        <div class="heading">
+            <h1>Headings</h1>
+        </div>
+
+        <!--Paragraph-->
+
+        <div class="paragraph">
+            <p>Paragraph</p>
+        </div>
+
+        <!--Linking html files - Dito naman sa anchor tag meron tayong 2 attributes: href and target. Sa href link lang ng file na gusto natin mapuntahan pagpinindot ni user yung link na ginawa natin, sa target naman may self and blank tayo sa self sa curren tab lang mag-oopen link natin pagpinindot ni user sa blank naman sa new tab nmag-oopen kapagka-pinindot nya yung link. -->
+
+        <div class="link">
+            <a href="home.html" target="_self">HOME PAGE</a>
+        </div>
+
+        <!--Image & Image linking - Image -dito naman sa image element natin may 3 attributes tayo: src, width, and alt. Sa src dito natin ilalagay link ng image natin, sa width heto naman yung magiging size ng image natin, sa alt indication lang to na failed yung pag load ng image natin bali may lalabas na text kapagka-failed yung paglo-load ng image natin.
+        
+        Image linking - sa paggawa naman natin ng image link need natin sya ipasok sa loob ng anchor tag natin, anchor tag lang then yung 2 attributes natin na src and target, then sa loob non ilagay nanatin yung image element natin kasama yung 3 attributes nya na src, width, and alt.
+        -->
+
+        <div class="image">
+            <img src="Logo.png" width="50" alt="error"/>
+        </div>
+
+        <div class="imageLink">
+            <a href="home.html" target="_self">
+                <img src="Logo.png" width="100" alt="error"/>
+            </a>
+        </div>
+
+        <!--Table - Para makabuo tayo ng table kaylangan natin ng table, caption, table row, table heading, and table data. Sa table heto yung pinaka-body natin para makagawa tayo ng table, then sa caption heto lang yung title ng table natin makikita natin sya sa top center ng table natin, table row dito naman heto yung magigigng container ng table heading and table data natin sya yung magsisilbing lalagayanan, sa table heading heto naman yung magiging title natin kunyari items, prices, and so on. Sa table data naman is heto yung magigiging laman ng table heading natin kunyari apple and their price.-->
+
+        <div class="table">
+            <table>
+                <caption>Items and their prices</caption>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+
+                    <tr>
+                        <td>Apple</td>
+                        <td>200</td>
+                    </tr>
+
+                    <tr>
+                        <td>Banana</td>
+                        <td>100</td>
+                    </tr>
+            </table>
+
+        </div>
+
+        <!--List - Sa paggawa ng list meron tayong ordered list, unordered list, and list. Sa ordered list natin function neto is number yung nakalagy bago yung text natin, sa unordered list natin bullet type naman or yung circle na maliit ang nakalagay bago yung text natin, sa list heto yung pinakapalaman natin sya yung content. Bali yung ordered list and unordered list is sila yung tinapay para makagawa tayo ng bullet type or ng number type bago yung text na ilalagay natin. Example pagcominen natin sya sa using ul and list para sa paggawa natin ng top 5 most honsome in the philippines na text kumbaga title, and then sa ordered list sy anaman yung gagamitin natin para sa 5 numbers sa nabanggit natin na top 5.-->
+
+        <div class="list">
+            <ol>
+                <li>John Jersie O. Santiago</li>
+            </ol>
+
+            <ul>
+                <li>Content</li>
+            </ul>
+
+            <ul>
+                <li>Top 5 most hondsome in the philippines.</li>
+                    <ol>
+                        <li>me1</li>
+                        <li>me2</li>
+                        <li>me3</li>
+                        <li>me4</li>
+                        <li>me5</li>
+                    </ol>
+            </ul>
+        </div>
+
+        <!--Input types-->
+
+        <input type="email" placeholder="Email address"/><br>
+        <input type="password" placeholder="password"/><br>
+        <input type="text" placeholder="Messages"/><br>
+        <input type="number" placeholder="Verificaton code"/><br>
+        <input type="tel" placeholder="Telephone number"/><br>
+        <input type="search" placeholder="Search"/><br>
+        <input type="url" placeholder="Paste the link"/><br>~
+
+
+        <!--Form with input types-->
+
+        <div class="form">
+            <form target="_self" action="home.html">
+                <input type="email" placeholder="Email address"/><br>
+
+                <textarea rows="10" cols="10" placeholder="Messages"></textarea><br>
+
+                <input type="submit"/>
+
+            </form><br>
+        </div>
+
+        <!--Textarea - -->
+
+        <div class="textarea">
+            <form target="_self" action="home.html">
+                <textarea rows="10" cols="10" placeholder="Messages">
+
+                </textarea>
+            </form><br>
+        </div>
+
+        <!--Dropdown List - -->
+
+        <div class="Dropdown">
+            <form target="_self" action="home.html">
+                <select name="colorsList">
+                    <option value="color1">Red</option>
+                    <option value="color2">Blue</option>
+                </select>
+            </form>
+        </div>
     </body>
 </html>
